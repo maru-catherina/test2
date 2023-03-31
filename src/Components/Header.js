@@ -3,8 +3,8 @@ import React, { Component} from "react"
 import { Container, FormControl, Nav, Navbar, Form, Button } from "react-bootstrap"
 import logo from './logo192.png';
 import { BrowserRouter as Router , Routes,  Route, Link} from "react-router-dom";
-import Home from "../Pages/Home"
-import About from "../Pages/About"
+import Home from "..test2/src/Pages/Home"
+import About from "..test2/src/Pages/About"
 import Contacts from "../Pages/Contacts"
 import Blog from "../Pages/Blog"
 export default class Header extends Component {

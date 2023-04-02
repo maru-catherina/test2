@@ -25,10 +25,22 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
-                            <Nav.Link href="/contacts">Contacts</Nav.Link>
-                            <Nav.Link href="/blog">Blog</Nav.Link>
+                            <nav>
+              <ul id="navigation">
+                <li>
+                  <Link to="/home">Home</Link>
+                </li>
+                <li>
+                <Link to="/about">About</Link>
+                </li>
+                <li>
+                <Link to="/contact">Contact</Link>
+                </li>
+<li>
+                <Link to="/blog">Contact</Link>
+                </li>
+              </ul>
+            </nav>
                         </Nav>
                      <Form className="d-flex">
                           <FormControl 
@@ -44,7 +56,7 @@ export default class Header extends Component {
             </Navbar>
             <Router>
                 <Routes>
-                    <Route  exact path="/" element={<Home/>}/>
+                    <Route  exact path="/home" element={<Home/>}/>
                     <Route  exact path="/about" element={<About/>}/>
                     <Route  exact path="/contacts" element={<Contacts/>}/>
                     <Route  exact path="/blog" element={<Blog/>}/>
